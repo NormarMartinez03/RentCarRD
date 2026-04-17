@@ -1,0 +1,91 @@
+:root {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  color: #1f2937;
+  background-color: #f3f4f6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.auth-layout,
+.dashboard-layout {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.auth-layout {
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.auth-layout .card {
+  width: min(450px, 90vw);
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem 0;
+  gap: 0.5rem;
+}
+
+.tabs button,
+button {
+  border: none;
+  background: #e5e7eb;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tabs button.active,
+button:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+form {
+  display: grid;
+  gap: 0.8rem;
+}
+
+input {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 0.75rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+.error {
+  color: #dc2626;
+  font-weight: 600;
+}
